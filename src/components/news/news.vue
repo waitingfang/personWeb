@@ -1,6 +1,6 @@
 <template>
   <div class="news">
-    news
+	be
   </div>
 </template>
 
@@ -9,4 +9,5 @@ export default {}
 </script>
 
 <style scoped>
+
 </style>
