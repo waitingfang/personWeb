@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import news from '@/components/news/news'
 import project from '@/components/project/project'
 import heart from '@/components/heart/heart'
-import heart from '@/components/note/note'
+import note from '@/components/note/note'
 
 Vue.use(Router)
 

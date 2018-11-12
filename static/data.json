@@ -1,11 +1,42 @@
 {
-	"news": {
+	"news": [
+		{
+			"title": "HTML+CSS网页设计与布局",
+			"content": "",
+			"data": "2018-11-09"
+		},
+		{
+			"title": "css揭秘",
+			"content": "",
+			"data": "2018-11-09"
+		},
+		{
+			"title": "JavaScript基础教程",
+			"content": "",
+			"data": "2018-11-09"
+		}
+	],
+	"project": [
+		{
+			"subject": "HTML+CSS",
+			"knowledge": {
 
-	},
-	"project": {
-
-	},
+			},
+			"descripiton":""
+		},
+		{
+			"subject":"JavaScript"
+		},
+		{
+			"subject":"Vue"
+		},
+		{
+			"subject":"webpack"
+		}
+	],
 	"personal": {
-		
+		"name": "waiting|fang",
+		"signature":"",
+		"descripiton": "你好，很高兴见到你！我是一个性格开朗、做事认真仔细的人。我喜欢一切有逻辑性的东西。喜欢旅行，热爱拍照。宽厚待人、适应能力很好。"
 	}
 }
