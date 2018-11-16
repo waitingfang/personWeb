@@ -1,27 +1,18 @@
 <template>
-	<div class="header">
-		<div class="background">
-			<div class="content">
-				<div class="info" @click="infomation">
-					<div class="name">{{info}}</div>
-				</div>
-				<div class="nav">
-					<div class="tab">
-						<div class="tab-item">
-							<router-link :to="'/news'">News</router-link>
-						</div>
-						<div class="tab-item">
-							<router-link :to="'/project'">Project</router-link>
-						</div>
-						<div class="tab-item">
-							<router-link :to="'/note'">Note</router-link>
-						</div>
-						<div class="tab-item">
-							<router-link :to="'/heart'">Heart</router-link>
-						</div>
-					</div>
-				</div>
-			</div>
+	<div class="tab">
+		<div class="content">
+			<router-link :to="'/news'" class="nav">
+				<div class="tab-item">News</div>
+			</router-link>
+			<router-link :to="'/project'" class="nav">
+				<div class="tab-item">Project</div>
+			</router-link>
+			<router-link :to="'/note'" class="nav">
+				<div class="tab-item">Note</div>
+			</router-link>
+			<router-link :to="'/heart'" class="nav">
+				<div class="tab-item">Heart</div>
+			</router-link>
 		</div>
 	</div>
 </template>
@@ -40,21 +31,12 @@ export default {
 </script>
 
 <style>
-* {
-    padding: 0;
-    margin: 0;
-}
-.header {
-	background: url(1.jpg) no-repeat;
-	background-size:100%;
+.tab {
 	width: 100%;
 	height: 60px;
-	padding: 10px 0px;
+	background: #307caf;
 }
-.header .background{
-	background: rgba(200,200,200,0.1);
-}
-.header .content {
+.content {
 	display: flex;
 	margin: 0px auto;
 	width: 80%;
@@ -62,25 +44,15 @@ export default {
 	line-height: 60px;
 	color: #fff;
 }
-.header .content .info {
-	flex: 300px 0 0;
-	font-size: 18px;
-}
-.header .nav {
-	flex: 1;
-}
-.header .nav .tab {
-	display: flex;
-	text-align: center;
-}
-.tab .tab-item {
+.nav {
 	flex: 1;
 	display: block;
+	text-align: center;
 	font-size: 16px;
-	color: #000000;
+	color: #fff;
 	text-decoration: none;
 }
-.tab .tab-item .router-link-active {
-	color: #ff0000;
+.router-link-active .tab-item{
+	background: #296893;
 }
 </style>

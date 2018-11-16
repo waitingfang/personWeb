@@ -39,6 +39,11 @@ export default {
 </script>
 
 <style scoped>
+.note {
+	margin: 0 auto;
+	width: 100%;
+	background: #fffdfd;
+}
 .notelist {
 	position: relative;
 	margin: 0 auto;
@@ -51,7 +56,7 @@ export default {
 	width: 100%;
 	height: 40px;
 	line-height: 40px;
-	background: #eee;
+	background: #ccc;
 	color: #333;
 }
 .notelist .title .name {
