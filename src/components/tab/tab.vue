@@ -30,7 +30,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tab {
 	width: 100%;
 	height: 60px;

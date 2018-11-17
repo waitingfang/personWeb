@@ -2,9 +2,9 @@
 	<div class="news">
 		<!-- about us -->
 		<div class="about">
-			<div class="title">
+			<titlel>
 				<h1>关于我们</h1>
-			</div>
+			</titlel>
 			<div class="content">
 				<p>供热行业为传统行业，信息化程度普遍较低，但随着城市集中供热的改革，供热逐渐商品化、市场化，供热企业之间的竞争也逐渐变大，供热企业的信息化也随之开始萌芽，特别是作为主营业务收入来源的暖费，传统的手工方式已经远远不能满足现在的收费管理要求。同时随着国家节能减排的推进，建筑节能和热计量收费已成为供热行业的热点，收费政策的调整和客户对服务的要求都对供热企业管理和发展提出了更高的要求。</p>
 				<p>只有实施信息化，才能应对持续的政策变化，才能对热计量等收费实施精确化管理，才能提升企业的管理效率和管理水平，从而提升供热企业的效益。越来越多的供热企业已经或开始考虑购买供热收费软件和相关管理软件。</p>
@@ -14,12 +14,13 @@
 		</div>
 		<!-- product -->
 		<div class="product">
-			<div class="title">
-				<h1>产品展示</h1>
-			</div>
+			<titlel>
+				<h1>项目展示</h1>
+			</titlel>
 			<div class="items">
 				<div class="items_w">
 					<div class="items_w_top">早晨第一杯水喝什么?</div>
+					<div class="items_content"></div>
 					<div class="items_w_bot">
 						<span>2018年5月</span>
 						<button>查看详情</button>
@@ -27,6 +28,7 @@
 				</div>
 				<div class="items_w">
 					<div class="items_w_top">早晨第一杯水喝什么?</div>
+					<div class="items_content"></div>
 					<div class="items_w_bot">
 						<span>2018年5月</span>
 						<button>查看详情</button>
@@ -34,6 +36,7 @@
 				</div>
 				<div class="items_w">
 					<div class="items_w_top">早晨第一杯水喝什么?</div>
+					<div class="items_content"></div>
 					<div class="items_w_bot">
 						<span>2018年5月</span>
 						<button>查看详情</button>
@@ -41,6 +44,7 @@
 				</div>
 				<div class="items_w">
 					<div class="items_w_top">早晨第一杯水喝什么?</div>
+					<div class="items_content"></div>
 					<div class="items_w_bot">
 						<span>2018年5月</span>
 						<button>查看详情</button>
@@ -50,11 +54,9 @@
 		</div>
 		<!-- news -->
 		<div class="news">
-			<div class="title">
-				<span></span>
+			<titlel>
 				<h1>新闻中心</h1>
-				<span></span>
-			</div>
+			</titlel>
 			<div class="content">
 				<ul>
 					<li><a href="#">集中供热，已有近百年的历史。由于它具有节约燃料、减少城市污染等优点，所以发展速度很快。世界上已有20多个国家采用集中供热。</a></li>
@@ -66,100 +68,96 @@
 </template>
 
 <script>
-export default {}
+import titlel from '../../base/title/title'
+export default {
+	components: {
+		titlel
+	}
+}
 </script>
 
 <style scoped>
+.news {
+	width: 100%;
+	margin: 0 auto;
+}
 .about {
 	width: 80%;
 	margin: 0 auto;
 }
-.about .title{
-	width: 100%;
-	height: 60px;
-}
-.about .title h1{
-	color:#405776;
-	text-align: center;
-	line-height: 60px;
-}
 .about .content{
-	padding: 10px;
 	width: 100%;
 	height: 100%;
 	color: #000;
 }
 .about .content p{
+	margin-bottom: 15px;
+	width: 100%;
+	line-height: 20px;
 	text-indent: 2em;
 	font-size: 12px;
-	line-height: 15px;
 	font-family:"mocrosoft yahei";
-	line-height: 16px;
 }
 .product{
 	width: 100%;
-	margin:10 auto;
+	margin: 10px auto;
 	background-color: #ced0d4;
 }
-.product .title{
-	width: 100%;
-	margin: 0px auto;
-}
-.product .title h1{
-	color:#405776;
-	text-align: center;
-	line-height: 60px;
+.product:after {
+	content:' ';
+	display:table;
+	clear:both;
 }
 .product .items{
-	width: 68%;
-	margin:0px auto;
+	display: flex;
+	width: 80%;
+	margin: 0px auto;
+	padding-bottom: 30px;
 }
 .product .items .items_w{
-	float: left;
-	width: 220px;
+	flex: 1;
+	margin-right: 10px;
 	height: 310px;
 	background-color: #fff;
-	margin:10px 50px;
+	border-radius: 4px;
+	box-shadow: 4px 4px 5px #ccc;
 }
-.product .items .items_w .items_w_top{
-	width: 220px;
+.items_w .items_w_top{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #fff;
+	border-radius: 4px;
+}
+.items_w .items_content {
+	width: 100%;
 	height: 220px;
 	background-color: #f9f9f9;
 }
-.product .items .items_w .items_w_bot{
+.product .items .items_w .items_w_bot {
 	position: relative;
+	width: 100%;
+	height: 40px;
 }
-.product .items .items_w .items_w_bot p{
-	font-size: 16px;
-	margin:12px 15px;
-	font-weight: 700;
-}
-.product .items .items_w .items_w_bot span{
+.product .items .items_w .items_w_bot span {
+	position: absolute;
+	left: 15px;
+	top: 15px;
 	font-size: 12px;
-	position: absolute;
-	left:15px;
-	top:40px;
 }
-.product .items .items_w .items_w_bot button{
-	width: 87px;
-	height: 25px;
-	border:1px solid #d7d7d7;
+.product .items .items_w .items_w_bot button {
 	position: absolute;
-	right:15px;
-	top:36px;
+	right: 15px;
+	top: 8px;
+	width: 86px;
+	height: 24px;
+	background: #f9f9f9;
+	border: 1px solid #d7d7d7;
+	border-radius: 4px;
 }
-
 .news {
 	clear: both;
-}
-.news .title{
-	width: 100%;
-	margin: 0px auto;
-}
-.news .title h1{
-	color:#405776;
-	text-align: center;
-	line-height: 60px;
 }
 .news .content {
 	width: 100%;
