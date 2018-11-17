@@ -28,14 +28,13 @@ export default {}
 }
 .content .content_left{
 	display: inline-block;
-	float: left;
 	font-size: 18px;
 	line-height: 60px;
 }
 .content .content_right{
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: 24px;
 	font-size: 12px;
 	font-family: "microsoft yahei";
 }
