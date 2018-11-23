@@ -4,6 +4,7 @@ import news from '@/components/news/news'
 import project from '@/components/project/project'
 import heart from '@/components/heart/heart'
 import note from '@/components/note/note'
+import home from '@/components/home/home'
 
 Vue.use(Router)
 
@@ -11,7 +12,11 @@ export default new Router({
 	routes: [
 		{
 			path: '/',
-			redirect: '/news'
+			redirect: '/home'
+		},
+		{
+			path: '/home',
+			component: home
 		},
 		{
 			path: '/news',
