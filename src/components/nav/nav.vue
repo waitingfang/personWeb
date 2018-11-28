@@ -13,7 +13,7 @@
 			<router-link :to="'/news'">BLOG</router-link>
 		</div>
 		<div class="tab-item">
-			<router-link :to="'/heart'">CONTACT</router-link>
+			<router-link :to="'/contact'">CONTACT</router-link>
 		</div>
 	</div>
 </template>

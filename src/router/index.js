@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import news from '@/components/news/news'
-import project from '@/components/project/project'
-import heart from '@/components/heart/heart'
-import note from '@/components/note/note'
-import home from '@/components/home/home'
+import news from '@/components/news/news.vue'
+import project from '@/components/project/project.vue'
+import note from '@/components/note/note.vue'
+import home from '@/components/home/home.vue'
+import contact from '@/components/contact/contact.vue'
 
 Vue.use(Router)
 
@@ -31,8 +31,8 @@ export default new Router({
 			component: note
 		},
 		{
-			path: '/heart',
-			component: heart
+			path: '/contact',
+			component: contact
 		}
 	]
 })

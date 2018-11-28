@@ -34,7 +34,7 @@ export default {
 	color: #5d6e80;
 }
 .content .name {
-	flex: 350px 0 0;
+	flex: 250px 0 0;
 	line-height: 90px;
 	font-size: 24px;
 	font-weight: 700;
